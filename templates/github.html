@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container pretty-bg">
-  <div class="container">
-    <h3>My Github Repos</h3>
-      <ul>
-        {% for repo in github_repos %}  
-          <li>{{ repo.name }}</li>
-        {% endfor %}
-      </ul>
-  </div>
-</div>
+    <div class="container pretty-bg">
+      <div class="container">
+        <h3>My Github Repos</h3>
+          <ul>
+            {% for repo in github_repos %}  
+              <li>{{ repo.name }}</li>
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
 {% endblock content %}
